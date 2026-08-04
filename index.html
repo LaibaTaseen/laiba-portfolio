@@ -4,77 +4,99 @@
 <meta charset="UTF-8">
 <title>Laiba Taseen — AI Engineer Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="AI portfolio of Laiba Taseen — SafeChat AI cyberbullying detection and AI Study Companion.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --ink: #0B0F19;
-    --paper: #FAFAFA;
-    --blue: #2F5EFF;
-    --slate: #6B7280;
-  }
-  * { box-sizing: border-box; }
-  html, body {
-    margin: 0;
-    height: 100%;
-  }
-  body {
-    background: var(--paper);
-    color: var(--ink);
-    font-family: 'Inter', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 24px;
-  }
-  .wrap {
-    max-width: 480px;
-    text-align: left;
-  }
-  .kicker {
-    font-weight: 600;
-    font-size: 13px;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--blue);
-    margin-bottom: 18px;
-  }
-  h1 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 700;
-    font-size: 44px;
-    line-height: 1.05;
-    letter-spacing: -0.02em;
-    margin: 0 0 12px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-  .dot {
-    width: 9px;
-    height: 9px;
-    background: var(--blue);
-    border-radius: 2px;
-    display: inline-block;
-  }
-  p {
-    font-size: 17px;
-    color: var(--slate);
-    line-height: 1.55;
-    margin: 0;
-  }
-  @media (max-width: 480px) {
-    h1 { font-size: 34px; }
-  }
-</style>
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <div class="wrap">
-    <div class="kicker">Portfolio</div>
-    <h1>Laiba Taseen<span class="dot"></span></h1>
-    <p>Aspiring AI Engineer. Building practical AI and Machine Learning projects that solve real-world problems. Full portfolio coming soon.</p>
+
+<nav class="site-nav">
+  <div class="site-nav-inner">
+    <a href="index.html" class="site-logo">Laiba Taseen<span class="dot"></span></a>
+    <div class="site-links">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
   </div>
+</nav>
+
+<div class="page">
+
+  <section id="hero" style="margin-bottom:88px;">
+    <div class="kicker">Aspiring AI Engineer</div>
+    <h1>I build AI tools that actually work — and I'm honest about what doesn't.</h1>
+    <p class="sub">Two real projects: a cyberbullying detector trained on 159,000 labeled comments, and a study app that turns lecture files into summaries, flashcards, and quizzes.</p>
+    <a href="#work" class="btn btn-primary">See the case studies</a>
+  </section>
+
+  <section id="proof">
+    <div class="section-label">What I do</div>
+    <p class="proof">I build practical AI and Machine Learning projects that solve real-world problems and demonstrate my skills as an aspiring AI Engineer.</p>
+  </section>
+
+  <section id="work">
+    <div class="section-label">Work</div>
+
+    <div class="case-card" style="margin-bottom:24px;">
+      <span class="case-status status-live">Complete — tested</span>
+      <h3 class="case-title">SafeChat AI</h3>
+      <p class="case-summary">A cyberbullying detection system that reads a message and flags it — toxic, threat, insult, and more — using a machine learning model trained on real human-labeled comments, instead of a keyword filter anyone can dodge.</p>
+      <div class="stat-row">
+        <div>
+          <div class="stat-num">94–99%</div>
+          <div class="stat-label">accuracy by category</div>
+        </div>
+        <div>
+          <div class="stat-num">159,000</div>
+          <div class="stat-label">labeled comments trained on</div>
+        </div>
+        <div>
+          <div class="stat-num">13 / 13</div>
+          <div class="stat-label">test messages correctly classified</div>
+        </div>
+      </div>
+      <div class="case-meta-row">
+        <span class="tag">Logistic Regression + TF-IDF</span>
+        <span class="tag">Flask REST API</span>
+        <span class="tag">Urdu &amp; Roman Urdu support</span>
+      </div>
+      <a href="safechat-ai.html" class="btn btn-primary">See full case study</a>
+    </div>
+
+    <div class="case-card">
+      <span class="case-status status-progress">In progress — personal testing</span>
+      <h3 class="case-title">AI Study Companion</h3>
+      <p class="case-summary">An app where students upload their lecture PDFs, PPTs, and Word documents and get automatic summaries, flashcards, quizzes, and a chat feature, all in one place, instead of switching between different tools.</p>
+      <div class="case-meta-row">
+        <span class="tag">React + FastAPI</span>
+        <span class="tag">SQLite + JWT auth</span>
+        <span class="tag">Groq API</span>
+      </div>
+      <a href="study-companion.html" class="btn btn-primary">See full case study</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-label">About</div>
+    <p class="about-text">I am a final-year Artificial Intelligence student who enjoys building practical AI applications that solve real-world problems. My projects focus on natural language processing (NLP), machine learning, and full-stack web development, with the goal of turning AI models into complete, usable products.</p>
+  </section>
+
+  <section id="contact" style="margin-bottom:40px;">
+    <div class="section-label">Contact</div>
+    <p class="about-text">Thank you for reading my portfolio. If you'd like to discuss AI, machine learning, or potential internship and collaboration opportunities, feel free to connect with me on LinkedIn or explore my GitHub projects.</p>
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/in/laiba-taseen-3824a132b" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/LaibaTaseen" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <a href="#work" class="back-link" style="margin-top:24px;">↑ Back to the case studies</a>
+  </section>
+
+  <footer>
+    Built by Laiba Taseen · Jekyll + GitHub Pages
+  </footer>
+
+</div>
 </body>
 </html>
